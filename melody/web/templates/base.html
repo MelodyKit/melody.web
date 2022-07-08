@@ -1,0 +1,48 @@
+{% set fa_version = "6.1.1" %}
+
+{% set style = "/static/css/output.css" %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    {% block head %}
+
+    <title>{{ title }}</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta author="MelodyKit">
+    <meta name="description" content="{{ description }}">
+
+    <meta property="og:site_name" content="MelodyKit">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="https://melodykit.app/static/images/icon.png">
+
+    <link rel="manifest" href="/static/melodykit.webmanifest">
+
+    <link rel="icon" type="image/svg+xml" href="/static/images/icon.svg">
+    <link rel="icon" type="image/png" href="/static/images/icon.png">
+
+    <script defer src="https://use.fontawesome.com/releases/v{{ fa_version }}/js/all.js"></script>
+
+    {% endblock %}
+
+    {% block include %}
+
+    <link rel="preload" href="{{ style }}" as="style">
+
+    <link rel="stylesheet" href="{{ style }}">
+
+    {% endblock %}
+  </head>
+  <body class="bg-white dark:bg-neutral-900 text-black dark:text-white">
+
+    {% block body %}
+
+    {% endblock %}
+
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set title = "Home" %}
+{% set description = "MelodyKit - All your music, in one place." %}
+
+{% set email = "hello" %}
+
+{% block body %}
+
+{{ super() }}
+
+<header>
+  <div class="font-mono">MelodyKit</div>
+  <a href="#">Home</a>
+  <a href="#contact">Contact</a>
+  <a href="/github"><i class="fab fa-github"></i></a>
+  <a href="/twitter"><i class="fab fa-twitter"></i></a>
+  <a href="/youtube"><i class="fab fa-youtube"></i></a>
+  <a href="/reddit"><i class="fab fa-reddit-alien"></i></a>
+  <a href="/discord"><i class="fab fa-discord"></i></a>
+</header>
+
+<h1>All your music, in one place.</h1>
+<h2>Contact</h2>
+<a href="/email/{{ email }}">Email</a>
+
+{% endblock %}
