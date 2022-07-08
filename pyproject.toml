@@ -32,6 +32,7 @@ include = "melody"
 
 [tool.poetry.dependencies]
 python = ">= 3.7"
+aiohttp = ">= 3.8.1"
 click = ">= 8.1.3"
 jinja2 = ">= 3.1.2"
 entrypoint = ">= 1.3.0"
