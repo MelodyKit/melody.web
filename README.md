@@ -1,3 +1,3 @@
 # `melody.web`
 
-> *All your music, in one place*
+> *All your music, in one place.*
