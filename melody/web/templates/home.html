@@ -7,7 +7,7 @@
 {{ super() }}
 
 <header>
-  <div class="font-mono">MelodyKit</div>
+  <div>MelodyKit</div>
   <a href="#">Home</a>
   <a href="/login">Login</a>
   <a href="/github"><i class="fab fa-github"></i></a>
@@ -17,6 +17,9 @@
   <a href="/discord"><i class="fab fa-discord"></i></a>
 </header>
 
-<h1>All your music, in one place.</h1>
+<h1 class="text-5xl lg:text-8xl">
+  All <span class="text-transparent bg-clip-text bg-gradient-to-b from-melody-purple to-melody-blue">your</span> music,
+  <br>in <span class="text-transparent bg-clip-text bg-gradient-to-b from-melody-purple to-melody-blue">one</span> place.
+</h1>
 
 {% endblock %}
