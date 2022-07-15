@@ -1,15 +1,16 @@
 {% extends "base.html" %}
 {% set title = "Home" %}
 {% set description = "MelodyKit - All your music, in one place." %}
+{% set gradient = "/static/images/gradient.svg" %}
 
 {% block body %}
 
 {{ super() }}
 
 <header>
+  <a href="#"><img src="{{ gradient }}"></img></a>
   <div>MelodyKit</div>
-  <a href="#">Home</a>
-  <a href="/login">Login</a>
+  <button><a class="font-mono" href="/login">Login</a></button>
   <a href="/github"><i class="fab fa-github"></i></a>
   <a href="/twitter"><i class="fab fa-twitter"></i></a>
   <a href="/youtube"><i class="fab fa-youtube"></i></a>
