@@ -7,15 +7,25 @@
 
 {{ super() }}
 
-<header>
-  <a href="#"><img src="{{ gradient }}"></img></a>
-  <div>MelodyKit</div>
-  <button><a class="font-mono" href="/login">Login</a></button>
-  <a href="/github"><i class="fab fa-github"></i></a>
-  <a href="/discord"><i class="fab fa-discord"></i></a>
-  <a href="/twitter"><i class="fab fa-twitter"></i></a>
-  <a href="/youtube"><i class="fab fa-youtube"></i></a>
-  <a href="/reddit"><i class="fab fa-reddit-alien"></i></a>
+<header class="relative pt-6 lg:pt-8 flex items-center justify-between text-neutral-700 leading-6 dark:text-neutral-200">
+  <div>
+    <a href="#">
+      <img class="w-auto h-10" src="/static/images/gradient.svg"></img>
+    </a>
+    <a class="text-neutral-900 dark:text-white" href="#"></a>
+  </div>
+  <div class="flex items-center space-x-10">
+    <div class="hidden md:flex space-x-10">
+      <a class="text-neutral-900 dark:text-white" href="/github"><i class="fab fa-github w-auto h-10"></i></a>
+      <a class="text-discord" href="/discord"><i class="fab fa-discord w-auto h-10"></i></a>
+      <a class="text-twitter" href="/twitter"><i class="fab fa-twitter w-auto h-10"></i></a>
+      <a class="text-youtube" href="/youtube"><i class="fab fa-youtube w-auto h-10"></i></a>
+      <a class="text-reddit" href="/reddit"><i class="fab fa-reddit-alien w-auto h-10"></i></a>
+    </div>
+    <a class="text-white dark:text-neutral-900 font-mono bg-neutral-900 dark:bg-white focus:outline-none h-10 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto" href="/login">
+      Login
+    </a>
+  </div>
 </header>
 
 <h1 class="text-5xl lg:text-8xl">
