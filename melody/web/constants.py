@@ -44,10 +44,14 @@ REDDIT_NAME = "reddit"
 TWITTER_NAME = "twitter"
 YOUTUBE_NAME = "youtube"
 
+INTRO_NAME = "intro"
+
 GITHUB_LINK = "https://github.com/MelodyKit"
 REDDIT_LINK = "https://reddit.com/r/MelodyKit"
 TWITTER_LINK = "https://twitter.com/MelodyKit"
 YOUTUBE_LINK = "https://youtube.com/MelodyKit"
+
+INTRO_LINK = "https://youtu.be/dQw4w9WgXcQ"
 
 NAME_TO_LINK = {
     DISCORD_NAME: DISCORD_LINK,
@@ -55,6 +59,7 @@ NAME_TO_LINK = {
     REDDIT_NAME: REDDIT_LINK,
     TWITTER_NAME: TWITTER_LINK,
     YOUTUBE_NAME: YOUTUBE_LINK,
+    INTRO_NAME: INTRO_LINK,
 }
 
 DEFAULT_HOST = "0.0.0.0"

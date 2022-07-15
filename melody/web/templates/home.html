@@ -7,30 +7,41 @@
 
 {{ super() }}
 
-<header class="relative pt-6 lg:pt-8 flex items-center justify-between text-neutral-700 leading-6 dark:text-neutral-200">
-  <div>
-    <a href="#">
-      <img class="w-auto h-10" src="/static/images/gradient.svg"></img>
-    </a>
-    <a class="text-neutral-900 dark:text-white" href="#"></a>
-  </div>
-  <div class="flex items-center space-x-10">
-    <div class="hidden md:flex space-x-10">
-      <a class="text-neutral-900 dark:text-white" href="/github"><i class="fab fa-github w-auto h-10"></i></a>
-      <a class="text-discord" href="/discord"><i class="fab fa-discord w-auto h-10"></i></a>
-      <a class="text-twitter" href="/twitter"><i class="fab fa-twitter w-auto h-10"></i></a>
-      <a class="text-youtube" href="/youtube"><i class="fab fa-youtube w-auto h-10"></i></a>
-      <a class="text-reddit" href="/reddit"><i class="fab fa-reddit-alien w-auto h-10"></i></a>
+<div class="px-4 sm:px-6 md:px-8">
+  <header class="relative pt-6 lg:pt-8 flex items-center justify-between text-neutral-700 leading-6 dark:text-neutral-200">
+    <div class="flex items-center space-x-10">
+      <a href="#"><img class="w-auto h-10" src="/static/images/gradient.svg"></img></a>
+      <a class="text-neutral-900 dark:text-white text-2xl lg:text-3xl" href="#">MelodyKit</a>
     </div>
-    <a class="text-white dark:text-neutral-900 font-mono bg-neutral-900 dark:bg-white focus:outline-none h-10 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto" href="/login">
-      Login
-    </a>
-  </div>
-</header>
+    <div class="flex items-center space-x-10">
+      <div class="hidden md:flex space-x-10">
+        <a class="text-neutral-900 dark:text-white" href="/github"><i class="fab fa-github w-auto h-10"></i></a>
+        <a class="text-discord" href="/discord"><i class="fab fa-discord w-auto h-10"></i></a>
+        <a class="text-twitter" href="/twitter"><i class="fab fa-twitter w-auto h-10"></i></a>
+        <a class="text-youtube" href="/youtube"><i class="fab fa-youtube w-auto h-10"></i></a>
+        <a class="text-reddit" href="/reddit"><i class="fab fa-reddit-alien w-auto h-10"></i></a>
+      </div>
+      <a class="text-white dark:text-neutral-900 text-xl font-mono bg-neutral-900 dark:bg-white focus:outline-none h-10 px-4 rounded-lg w-full flex items-center justify-center sm:w-auto" href="/login">
+        Login
+      </a>
+    </div>
+  </header>
 
-<h1 class="text-5xl lg:text-8xl">
-  All <span class="text-transparent bg-clip-text bg-gradient-to-b from-melody-purple to-melody-blue">your</span> music,
-  <br>in <span class="text-transparent bg-clip-text bg-gradient-to-b from-melody-purple to-melody-blue">one</span> place.
-</h1>
+  <section class="relative max-w-5xl pt-16 sm:pt-20 lg:pt-24">
+    <h1 class="text-5xl lg:text-8xl">
+      All <span class="text-transparent bg-clip-text bg-gradient-to-b from-melody-purple to-melody-blue">your</span> music,
+      <br>in <span class="text-transparent bg-clip-text bg-gradient-to-b from-melody-purple to-melody-blue">one</span> place.
+    </h1>
+    <div class="mt-6 text-xl lg:text-2xl text-neutral-700 dark:text-neutral-500 font-mono">
+      Your favorite songs from all music platforms, united in one place.
+    </div>
+    <div class="mt-6"></div>
+      <a class="text-xl lg:text-2xl text-neutral-900 dark:text-white font-mono" href="/intro">
+        <span class="text-transparent bg-clip-text bg-gradient-to-b from-melody-purple to-melody-blue">Watch the video</span> &gt;
+      </a>
+    </div>
+  </section>
+  <footer></footer>
+</div>
 
 {% endblock %}
