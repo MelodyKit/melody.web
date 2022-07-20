@@ -13,7 +13,7 @@ DOCS = URL(DOCS_LINK)
 
 
 @routes.get(DOCS_ROUTE)
-def handle_docs(request: Request) -> Response:
+async def handle_docs(request: Request) -> Response:
     name = request.match_info[NAME]
 
     if check_back(name):

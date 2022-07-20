@@ -9,7 +9,7 @@ EMAIL_ROUTE = f"/email/{identifier(NAME)}"
 
 
 @routes.get(EMAIL_ROUTE)
-def handle_docs(request: Request) -> Response:
+async def handle_email(request: Request) -> Response:
     name = request.match_info[NAME]
 
     raise HTTPFound(EMAIL_TO + EMAIL.format(name, DOMAIN))

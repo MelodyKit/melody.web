@@ -10,7 +10,7 @@ def create_redirect(name: str, link: str) -> Handler:
     async def handle_redirect(request: Request) -> Response:
         raise HTTPFound(link)
 
-    return handle_redirect
+    return handle_redirect  # type: ignore
 
 
 for name, link in NAME_TO_LINK.items():
