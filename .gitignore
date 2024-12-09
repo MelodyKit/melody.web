@@ -1,0 +1,13 @@
+# classic :)
+
+node_modules
+
+# build artifacts
+
+target/
+
+# remove if lock files should be included
+
+Cargo.lock
+
+deno.lock

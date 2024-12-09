@@ -1,0 +1,45 @@
+[package]
+name = "melody-web"
+version = "0.1.0"
+authors = ["MelodyKit <hello@melodykit.app>"]
+edition = "2021"
+readme = "README.md"
+repository = "https://github.com/MelodyKit/melody.web"
+license = "MIT"
+publish = false
+
+[dependencies.axum]
+version = "0.7.9"
+
+[dependencies.bon]
+version = "3.3.0"
+
+[dependencies.clap]
+version = "4.5.23"
+features = ["derive"]
+
+[dependencies.maud]
+version = "0.26.0"
+features = ["axum"]
+
+[dependencies.miette]
+version = "7.4.0"
+features = ["fancy"]
+
+[dependencies.serde]
+version = "1.0.215"
+features = ["derive"]
+
+[dependencies.thiserror]
+version = "2.0.4"
+
+[dependencies.tokio]
+version = "1.42.0"
+features = ["full"]
+
+[dependencies.tower]
+version = "0.5.1"
+
+[dependencies.tower-http]
+version = "0.6.2"
+features = ["full"]
