@@ -61,6 +61,11 @@ pub fn wrap(body: &Markup) -> Markup {
             ease-in-out
             bg-neutral-50
             dark:bg-neutral-900
+            min-h-screen
+            bg-no-repeat
+            bg-gradient-to-b
+            from-melody-purple/15
+            to-melody-blue/15
             text-neutral-900
             dark:text-neutral-50
             font-medium

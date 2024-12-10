@@ -2,7 +2,10 @@ use std::borrow::Cow;
 
 use maud::{html, Markup};
 
-use crate::templates::base::{base, head, HeadContext};
+use crate::{
+    date::{created, today, Datelike},
+    templates::base::{base, head, HeadContext},
+};
 
 pub const TITLE: &str = "Home";
 pub const DESCRIPTION: &str = "All your music, in one place.";
@@ -32,7 +35,7 @@ pub fn content() -> Markup {
                         px-4
                         border-2
                         border-transparent
-                        bg-neutral-300 dark:bg-black
+                        bg-neutral-300/50 dark:bg-black/50
                         placeholder-neutral-600 dark:placeholder-neutral-400
                         focus:border-neutral-500 dark:focus:border-neutral-700
                         focus:outline-none
@@ -57,7 +60,6 @@ pub fn content() -> Markup {
                     rounded-xl
                     px-4 py-2
                     text-xl
-                    shadow-sm
                     my-2
                 " {
                     "Open"
@@ -73,7 +75,7 @@ pub fn content() -> Markup {
             justify-between
             gap-5 pt-20
         " {
-            div class="my-12 lg:my-24 lg:w-1/2" {
+            div class="my-12 lg:my-24 w-full lg:w-1/2" {
                 h1 class="text-5xl leading-none" {
                     span class="hover-melody" { "All" }
                     " " span class="hover-melody" { "your" }
@@ -151,26 +153,26 @@ pub fn content() -> Markup {
             }
 
             div class="flex flex-row items-center justify-center" {
-                a href="/discord" class="mx-4 flex flex-col lg:ml-0" {
+                a href="/discord" class="mx-4 flex flex-col lg:ml-0" aria-label="Discord" {
                     i class="w-auto h-8 fa-brands fa-discord text-discord" {}
                 }
-                a href="/x" class="mx-4 flex flex-col lg:ml-0" {
+                a href="/x" class="mx-4 flex flex-col lg:ml-0" aria-label="X" {
                     i class="w-auto h-8 fa-brands fa-x-twitter" {}
                 }
-                a href="/reddit" class="mx-4 flex flex-col lg:ml-0" {
+                a href="/reddit" class="mx-4 flex flex-col lg:ml-0" aria-label="Reddit" {
                     i class="w-auto h-8 fa-brands fa-reddit-alien text-reddit" {}
                 }
-                a href="/youtube" class="mx-4 flex flex-col lg:ml-0" {
+                a href="/youtube" class="mx-4 flex flex-col lg:ml-0" aria-label="YouTube" {
                     i class="w-auto h-8 fa-brands fa-youtube text-youtube" {}
                 }
-                a href="/github" class="mx-4 flex flex-col lg:ml-0" {
+                a href="/github" class="mx-4 flex flex-col lg:ml-0" aria-label="GitHub" {
                     i class="w-auto h-8 fa-brands fa-github" {}
                 }
             }
 
             p class="min-w-full text-neutral-600 dark:text-neutral-400 text-center mt-8" {
                 i class="fa-regular fa-copyright hover-melody" {}
-                " MelodyKit 2022-2024. All rights reserved. "
+                " MelodyKit " (created().year()) "-" (today().year()) "." " All rights reserved. "
                 i class="fa-solid fa-heart hover-melody" {}
             }
         }

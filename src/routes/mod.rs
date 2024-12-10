@@ -70,7 +70,7 @@ pub fn router() -> Router<()> {
         .route("/open", get(redirect_open))
         .route("/docs", get(redirect_docs))
         .route("/dev", get(redirect_dev))
-        // social redirects
+        // other redirects
         .route("/discord", get(redirect_discord))
         .route("/github", get(redirect_github))
         .route("/x", get(redirect_x))
