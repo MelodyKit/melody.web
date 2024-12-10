@@ -163,8 +163,8 @@ pub fn content() -> Markup {
                 a href="/youtube" class="mx-4 flex flex-col lg:ml-0" {
                     i class="w-auto h-8 fa-brands fa-youtube text-youtube" {}
                 }
-                a href="/telegram" class="mx-4 flex flex-col lg:ml-0" {
-                    i class="w-auto h-8 fa-brands fa-telegram text-telegram" {}
+                a href="/github" class="mx-4 flex flex-col lg:ml-0" {
+                    i class="w-auto h-8 fa-brands fa-github" {}
                 }
             }
 
