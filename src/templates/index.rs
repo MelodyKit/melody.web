@@ -171,9 +171,9 @@ pub fn content() -> Markup {
             }
 
             p class="min-w-full text-neutral-600 dark:text-neutral-400 text-center mt-8" {
-                i class="fa-regular fa-copyright hover-melody" {}
-                " MelodyKit " (created().year()) "-" (today().year()) "." " All rights reserved. "
-                i class="fa-solid fa-heart hover-melody" {}
+                i class="fa-regular fa-copyright hover-melody mr-2" {}
+                "MelodyKit " (created().year()) "-" (today().year()) "." " All rights reserved."
+                i class="fa-solid fa-heart hover-melody ml-2" {}
             }
         }
     }
