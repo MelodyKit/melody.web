@@ -3,7 +3,7 @@ use std::borrow::Cow;
 use maud::{html, Markup, DOCTYPE};
 use serde::{Deserialize, Serialize};
 
-pub const ICONS: &str = "https://use.fontawesome.com/releases/v6.6.0/js/all.js";
+pub const ICONS: &str = "https://use.fontawesome.com/releases/v6.7.1/js/all.js";
 
 pub const IMAGE: &str = "https://melodykit.app/static/images/icon.png";
 
