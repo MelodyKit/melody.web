@@ -9,5 +9,5 @@ async fn redirect_projects(Path(name): Path<String>) -> Redirect {
 }
 
 pub fn router() -> Router<()> {
-    Router::new().route("/:name", get(redirect_projects))
+    Router::new().route("/{name}", get(redirect_projects))
 }

@@ -1,8 +1,0 @@
-{
-  "imports": {
-    "tailwindcss": "npm:tailwindcss@^3.4.16"
-  },
-  "tasks": {
-    "build": "deno run --allow-all --node-modules-dir npm:tailwindcss --input static/css/input.css --output static/css/output.css --minify"
-  }
-}

@@ -7,5 +7,5 @@ async fn redirect_email(Path(name): Path<String>) -> Redirect {
 }
 
 pub fn router() -> Router<()> {
-    Router::new().route("/:name", get(redirect_email))
+    Router::new().route("/{name}", get(redirect_email))
 }

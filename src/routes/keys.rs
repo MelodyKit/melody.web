@@ -22,5 +22,5 @@ async fn get_key(Path(name): Path<String>) -> Response {
 }
 
 pub fn router() -> Router<()> {
-    Router::new().route("/:name", get(get_key))
+    Router::new().route("/{name}", get(get_key))
 }
